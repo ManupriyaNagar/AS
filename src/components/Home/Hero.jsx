@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const HeroSection = () => {
   const [rotateX, setRotateX] = useState(0);
@@ -101,8 +100,8 @@ const HeroSection = () => {
   }}
   className="shadow-xl rounded-lg overflow-hidden transition-transform duration-150 ease-out"
 >
-  <Image
-    src="/5.jpg" // Replace with the correct image path
+  <img
+    src="/5.jpg" 
     alt="Energy Storage Solution"
     width={600}
     height={400}

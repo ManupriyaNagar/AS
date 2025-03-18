@@ -15,7 +15,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className=" bg-gradient-to-br from-blue-500 to-blue-100 py-10 px-5 md:px-32 ">
+    <div className=" bg-gradient-to-br from-blue-900 to-blue-100 py-10 px-5 md:px-32 ">
       {/* Single Grid for All Three Sections */}
 
       <h1 className="text-4xl font-bold text-center mb-10">Power Quality Solutions</h1>
@@ -36,7 +36,7 @@ export default function ContactSection() {
         className="w-full pl-12 pr-4 py-3 border-2 border-blue-100 rounded-xl placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all"
         onChange={handleChange}
       />
-      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     </div>
@@ -50,7 +50,7 @@ export default function ContactSection() {
         className="w-full pl-12 pr-4 py-3 border-2 border-blue-100 rounded-xl placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all"
         onChange={handleChange}
       />
-      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     </div>
@@ -64,7 +64,7 @@ export default function ContactSection() {
         className="w-full pl-12 pr-4 py-3 border-2 border-blue-100 rounded-xl placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all"
         onChange={handleChange}
       />
-      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
       </svg>
     </div>
@@ -77,7 +77,7 @@ export default function ContactSection() {
         className="w-full pl-12 pr-4 py-3 border-2 border-blue-100 rounded-xl placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none h-24 resize-none transition-all"
         onChange={handleChange}
       ></textarea>
-      <svg className="w-6 h-6 absolute left-3 top-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6 absolute left-3 top-4 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
       </svg>
     </div>
@@ -85,7 +85,7 @@ export default function ContactSection() {
     {/* Submit Button with Animation */}
     <button
       type="submit"
-      className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3  px-6 rounded-xl hover:from-blue-700 hover:to-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+      className="w-full bg-gradient-to-r from-blue-900 to-blue-800 text-white py-3  px-6 rounded-xl hover:from-blue-900 hover:to-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
     >
       <svg className="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -101,7 +101,7 @@ export default function ContactSection() {
         {/* Office Details Section */}
         {[
   {
-    title: 'Office Details',
+    title: 'Our Office Details',
     building: '30/66',
     street: 'Thirupalya Village, Electronic City Phase 1',
     locality: 'Bommasandra Industrial Estate',
@@ -120,20 +120,20 @@ export default function ContactSection() {
   >
     {/* Floating Icon */}
     <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
-      <svg className="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-16 h-16 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     </div>
 
     <div>
-      <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center uppercase tracking-wide bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent border-b-2 border-blue-100 pb-2">
+      <h3 className="text-2xl font-bold text-blue-900 mb-6 text-center uppercase tracking-wide bg-gradient-to-r from-blue-900 to-blue-800 bg-clip-text text-transparent border-b-2 border-blue-100 pb-2">
         {office.title}
       </h3>
       <div className="space-y-3 text-gray-700">
         {/* Address Section with Icon */}
         <div className="bg-blue-50 p-4 rounded-lg">
           <div className="flex items-start gap-3">
-            <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-900 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
@@ -142,8 +142,8 @@ export default function ContactSection() {
                 <span className="bg-blue-100 px-2 py-1 rounded-full text-xs font-medium text-blue-800">{office.building}</span>
                 {office.street}
               </p>
-              <p className="text-sm text-gray-600">{office.locality}</p>
-              <p className="text-sm text-gray-600">{office.city}, {office.district}</p>
+              <p className="text-sm text-gray-900">{office.locality}</p>
+              <p className="text-sm text-gray-900">{office.city}, {office.district}</p>
               <p className="text-sm font-medium text-blue-800">{office.stateZip}</p>
             </div>
           </div>
@@ -152,26 +152,26 @@ export default function ContactSection() {
         {/* Contact Section */}
         <div className="space-y-3 mt-4">
           <a href={`mailto:${office.email}`} className="flex items-center gap-2 p-2 hover:bg-blue-50 rounded-lg transition-colors">
-            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <span className="text-blue-600 hover:text-blue-800">{office.email}</span>
+            <span className="text-blue-900 hover:text-blue-800">{office.email}</span>
           </a>
 
           <a href={`http://${office.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 hover:bg-blue-50 rounded-lg transition-colors">
-            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
-            <span className="text-blue-600 hover:text-blue-800">{office.website}</span>
+            <span className="text-blue-900 hover:text-blue-800">{office.website}</span>
           </a>
 
           <div className="flex items-center gap-2 p-2">
-            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
             <div className="flex flex-col">
-              <a href={`tel:${office.phone1}`} className="text-blue-600 hover:text-blue-800">{office.phone1}</a>
-              <a href={`tel:${office.phone2}`} className="text-blue-600 hover:text-blue-800">{office.phone2}</a>
+              <a href={`tel:${office.phone1}`} className="text-blue-900 hover:text-blue-800">{office.phone1}</a>
+              <a href={`tel:${office.phone2}`} className="text-blue-900 hover:text-blue-800">{office.phone2}</a>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function ContactSection() {
 
     {/* Action Buttons */}
     <div className="grid grid-cols-2 gap-3 mb-1">
-      <a href={`tel:${office.phone1}`} className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
+      <a href={`tel:${office.phone1}`} className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4 py-3 rounded-xl hover:from-blue-900 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
@@ -205,7 +205,7 @@ export default function ContactSection() {
   <div className="flex items-center space-x-2 mb-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 text-blue-600"
+      className="h-6 w-6 text-blue-900"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -217,7 +217,7 @@ export default function ContactSection() {
         d="M16.88 3.549L7.12 3.55a2 2 0 00-1.99 2.01L5.13 18.45a2 2 0 002.01 1.99h9.76a2 2 0 001.99-1.99L18.87 5.56a2 2 0 00-1.99-2.01zM12 8v4m0 4h.01"
       />
     </svg>
-    <h3 className="text-2xl uppercase font-semibold text-blue-600">
+    <h3 className="text-2xl uppercase font-semibold text-blue-900">
       Find Us Here
     </h3>
   </div>
@@ -241,7 +241,7 @@ export default function ContactSection() {
     Visit us at our office in Electronic City, Bengaluru!
   </p>
 
-  <button className="absolute bottom-8  w-5/6 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+  <button className="absolute bottom-8  w-5/6 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
       Get Directions
     </button>
 </div>

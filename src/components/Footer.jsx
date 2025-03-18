@@ -1,117 +1,108 @@
+"use client";
+
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { useEffect, useState } from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
-  return (
-    <footer className="bg-gray-950 text-gra500">
-      {/* Top section: Social networks */}
-      <div className="border-b border-gray-200 py-4 flex justify-between items-center lg:px-16">
-  <div>Get connected with us on social networks:</div>
-  <div className="flex space-x-4">
-    <Link href="#" aria-label="Facebook">
-      <FaFacebookF className="text-xl hover:text-gray-800 transition-colors" />
-    </Link>
-    <Link href="#" aria-label="Twitter">
-      <FaTwitter className="text-xl hover:text-gray-800 transition-colors" />
-    </Link>
-    <Link href="#" aria-label="Google">
-      <FaGoogle className="text-xl hover:text-gray-800 transition-colors" />
-    </Link>
-    <Link href="#" aria-label="Instagram">
-      <FaInstagram className="text-xl hover:text-gray-800 transition-colors" />
-    </Link>
-    <Link href="#" aria-label="LinkedIn">
-      <FaLinkedinIn className="text-xl hover:text-gray-800 transition-colors" />
-    </Link>
-    
-  </div>
-</div>
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true); // Ensures this runs only on the client side
+  }, []);
+
+  return (
+    <footer className="relative bg-gray-950 text-gray-200">
+      {/* Background GIF (Only rendered on client to avoid SSR mismatch) */}
+      {isClient && (
+        <div className="absolute inset-0">
+          <img
+            src="/buttom-gif.gif" // Replace with actual GIF path
+            alt="Background Animation"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-blue-900 opacity-30"></div> {/* Faded blue overlay */}
+        </div>
+      )}
+
+      {/* Top section: Social networks */}
+      <div className="relative border-b border-gray-200 py-4 flex justify-between items-center lg:px-16 z-10">
+        <div>Get connected with us on social networks:</div>
+        <div className="flex space-x-4">
+          <Link href="#" aria-label="Facebook">
+            <FaFacebookF className="text-xl hover:text-gray-300 transition-colors" />
+          </Link>
+
+          <Link href="https://www.instagram.com/activesine_/" aria-label="Instagram">
+            <FaInstagram className="text-xl hover:text-gray-300 transition-colors" />
+          </Link>
+          <Link href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all" aria-label="LinkedIn">
+            <FaLinkedinIn className="text-xl hover:text-gray-300 transition-colors" />
+          </Link>
+        </div>
+      </div>
 
       {/* Main footer section */}
-      <div className="mx-auto py-10 px-6 md:px-12 lg:px-16 border-b border-gray-100">
+      <div className="relative mx-auto py-10 px-6 md:px-12 lg:px-16 border-b border-gray-100 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
           {/* Company Name */}
           <div>
-           <img src="/ActiveSine-logo.png" alt="logo" className="w-48 " />
-            
+            <img src="/ActiveSine-logo.png" alt="logo" className="w-48" />
           </div>
 
           {/* Products */}
           <div>
-            <h6 className="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
-              Products
-            </h6>
-            <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                Hybrid panle
-              </Link>
+            <h6 className="uppercase font-semibold mb-4">Products & Solutions</h6>
+            <p className="mb-4 text-gray-300 hover:text-gray-100 transition-colors">
+              Hybrid Panel
             </p>
-            <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                APFC panel
-              </Link>
+            <p className="mb-4 text-gray-300 hover:text-gray-100 transition-colors">
+              APFC Panel
             </p>
-            <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                AHF panel
-              </Link>
+            <p className="mb-4 text-gray-300 hover:text-gray-100 transition-colors">
+              IT/ITES Industries Solutions
             </p>
+            <p className="mb-4 text-gray-300 hover:text-gray-100 transition-colors">
+              Textile Solutions
+            </p>
+
           </div>
 
           {/* Useful links */}
           <div>
-            <h6 className="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
-              Useful Links
-            </h6>
-            {/* <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                Your Account
+            <h6 className="uppercase font-semibold mb-4">Services</h6>
+            <p className="mb-4">
+              <Link href="#" className="text-gray-300 hover:text-gray-100 transition-colors">
+                Training Services
               </Link>
             </p>
             <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                Become an Affiliate
-              </Link>
-            </p> */}
-            <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                Shipping Rates
+              <Link href="#" className="text-gray-300 hover:text-gray-100 transition-colors">
+                Interprerting Services
               </Link>
             </p>
             <p className="mb-4">
-              <Link href="#" className="text-gray-50 hover:text-gray-800 transition-colors">
-                Help
+              <Link href="#" className="text-gray-300 hover:text-gray-100 transition-colors">
+                Consulting
               </Link>
             </p>
           </div>
 
           {/* Contact */}
           <div>
-            <h6 className="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
-              Contact
-            </h6>
-            <p className="flex items-center justify-center md:justify-start mb-4">
-            Thirupalya Village, Electronic City Phase 1 ,Bommasandra Industrial Estate ,Bengaluru, Bengaluru Urban Karnataka-560099
-            </p>
-            <p className="flex items-center justify-center md:justify-start mb-4">
-              sales@activesine.com
-            </p>
-            <p className="flex items-center justify-center md:justify-start mb-4">
-              +91 99 01303 4214
-            </p>
-            <p className="flex items-center justify-center md:justify-start mb-4">
-            +91 80 6878 5509
-            </p>
+            <h6 className="uppercase font-semibold mb-4">Contact</h6>
+            <p className="mb-4">Thirupalya Village, Electronic City Phase 1, Bengaluru</p>
+            <p className="mb-4">sales@activesine.com</p>
+            <p className="mb-4">+91 99 01303 4214 , +91 80 6878 5509</p>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="bg-gray-950 text-center py-4 ">
+      <div className="relative bg-gray-950 text-center py-4 z-10">
         © 2025 Copyright:
-        <Link href="https://mdbootstrap.com/" className="text-gray-600 font-semibold ml-1">
-         ActiveSine
+        <Link href="https://mdbootstrap.com/" className="text-gray-400 font-semibold ml-1">
+          ActiveSine
         </Link>
       </div>
     </footer>

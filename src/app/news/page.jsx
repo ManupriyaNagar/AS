@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const NewsPage = () => {
@@ -11,7 +10,7 @@ const NewsPage = () => {
       title: "ActiveSign Launches New Advanced Sign Language Course",
       date: "March 15, 2024",
       category: "Education",
-      image: "/images/news/course-launch.jpg",
+      image: "/new2.png",
       excerpt: "We're excited to announce the launch of our new advanced sign language course, designed for professionals and organizations.",
       readMore: true
     },
@@ -20,7 +19,7 @@ const NewsPage = () => {
       title: "Breaking Barriers: ActiveSign Partners with Major Corporations",
       date: "March 10, 2024",
       category: "Partnerships",
-      image: "/images/news/partnership.jpg",
+      image: "/new1.jpg",
       excerpt: "ActiveSign has partnered with leading corporations to provide comprehensive sign language training programs.",
       readMore: true
     },
@@ -29,7 +28,7 @@ const NewsPage = () => {
       title: "New Research Shows Impact of Sign Language in Workplace",
       date: "March 5, 2024",
       category: "Research",
-      image: "/images/news/research.jpg",
+      image: "/new3.png",
       excerpt: "Recent studies demonstrate the positive impact of sign language training in workplace communication.",
       readMore: true
     }
@@ -38,7 +37,7 @@ const NewsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-10">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <div className="relative bg-gradient-to-r from-blue-700 to-blue-800 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
@@ -59,14 +58,14 @@ const NewsPage = () => {
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <div className="relative h-48">
-                <Image
+                <img
                   src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                  <span className="bg-blue-900 text-white px-3 py-1 rounded-full text-sm">
                     {item.category}
                   </span>
                 </div>
@@ -124,7 +123,7 @@ const NewsPage = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-blue-900 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Subscribe
               </button>

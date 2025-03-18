@@ -11,7 +11,7 @@ const SolutionSection = ({ heading, paragraph, buttonText, imageUrl, reverse }) 
       <div className="md:w-1/2">
         <h2 className="text-2xl font-bold mb-4">{heading}</h2>
         <p className="text-gray-700 mb-4">{paragraph}</p>
-        <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+        <button className="bg-green-900 text-white px-4 py-2 rounded hover:bg-green-600">
           {buttonText}
         </button>
       </div>
@@ -21,7 +21,7 @@ const SolutionSection = ({ heading, paragraph, buttonText, imageUrl, reverse }) 
         <img
           src={imageUrl}
           alt={heading}
-          className="max-w-full h-auto rounded shadow"
+          className="max-w-150 h-80 rounded shadow"
         />
       </div>
     </div>
