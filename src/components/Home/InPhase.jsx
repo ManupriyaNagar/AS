@@ -45,68 +45,63 @@ const fadeInVariant = {
 
 const PowerQualitySolutions = () => {
   return (
-    <section className="relative w-full h-auto py-40 px-10 bg-gray-900 text-white">
+    <section className="relative w-full h-auto py-40 px-4 sm:px-6 md:px-10 bg-blue text-white">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/3.jpg"
-          alt="Power Quality Solutions"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-60"
-        />
+      <div className="absolute inset-0 z-0 bg-black">
+      <Image src="/section.gif" fill style={{ objectFit: "cover" }} alt="Section GIF" />
+
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-        <h1 className="text-4xl font-bold">Power Quality Solutions</h1>
+      <div className="relative z-10 max-w-7xl mx-auto text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold">Power Quality Solutions</h1>
 
         {/* Sections Container */}
-        <div className="mt-10 flex gap-10">
+        <div className="mt-10 flex flex-col md:flex-row md:gap-10 gap-8">
           {/* By Applications */}
           <div className="flex-1 flex flex-col">
-            <h2 className="text-2xl font-semibold  border-b border-white pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold border-b border-white pb-2">
               By Applications
             </h2>
-            <div className="grid grid-cols-2 gap-20  mt-10 flex-grow">
+            <div className="grid grid-cols-2 gap-6 sm:gap-10 md:gap-20 mt-6 sm:mt-10 flex-grow">
               {applications.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="p-6 bg-blue-900 bg-opacity-40 rounded-lg flex flex-col items-center justify-center shadow-lg hover:bg-opacity-60 transition-all duration-300 h-full"
+                  className="p-4 sm:p-6 bg-blue border border-white bg-opacity-40 rounded-lg flex flex-col items-center justify-center shadow-lg hover:bg-opacity-60 transition-all duration-300 h-full"
                   variants={fadeInVariant}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   custom={index}
                 >
-                  <span className="text-orange-300">{item.icon}</span>
-                  <p className="mt-2 text-lg font-medium text-center">{item.text}</p>
+                  <span className="text-green">{item.icon}</span>
+                  <p className="mt-2 text-base sm:text-lg font-medium text-center">{item.text}</p>
                 </motion.div>
               ))}
             </div>
           </div>
 
-          {/* White Vertical Divider */}
-          <div className="w-[2px] bg-white"></div>
+          {/* White Vertical Divider - Hidden on Mobile */}
+          <div className="hidden md:block w-[2px] bg-white"></div>
 
           {/* By Problems */}
           <div className="flex-1 flex flex-col">
-            <h2 className="text-2xl font-semibold  border-b mb-10 border-white pb-2">
+            <h2 className="text-xl sm:text-2xl font-semibold border-b border-white pb-2">
               By Problems
             </h2>
-            <div className="grid grid-cols-2 gap-20 flex-grow">
+            <div className="grid grid-cols-2 gap-6 sm:gap-10 md:gap-20 mt-6 sm:mt-10 flex-grow">
               {problems.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="p-6 bg-blue-900 bg-opacity-40 rounded-lg flex flex-col items-center justify-center shadow-lg hover:bg-opacity-60 transition-all duration-300 h-full"
+                  className="p-4 sm:p-6 bg-blue bg-opacity-40 border border-white rounded-lg flex flex-col items-center justify-center shadow-lg hover:bg-opacity-60 transition-all duration-300 h-full"
                   variants={fadeInVariant}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   custom={index}
                 >
-                  <span className="text-orange-300">{item.icon}</span>
-                  <p className="mt-2 text-lg font-medium text-center">{item.text}</p>
+                  <span className="text-green">{item.icon}</span>
+                  <p className="mt-2 text-base sm:text-lg font-medium text-center">{item.text}</p>
                 </motion.div>
               ))}
             </div>

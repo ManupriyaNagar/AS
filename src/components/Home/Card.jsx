@@ -15,14 +15,14 @@ export default function ContactSection() {
   };
 
   return (
-    <div className=" bg-gradient-to-br from-blue-900 to-blue-100 py-10 px-5 md:px-32 ">
+    <div className=" bg-gradient-to-br from-blue-50 to-blue-100 py-10 px-5 md:px-32 ">
       {/* Single Grid for All Three Sections */}
 
-      <h1 className="text-4xl font-bold text-center mb-10">Power Quality Solutions</h1>
+      <h1 className="text-4xl font-bold text-center mb-10 text-black">Contact Us</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
         {/* Form Section */}
         <div className="bg-gradient-to-br from-white to-blue-50 shadow-2xl rounded-xl py-8 px-8 transform hover:scale-[1.02] hover:shadow-3xl transition-all duration-300 group">
-  <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center uppercase tracking-wide bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent">
+  <h2 className="text-3xl font-bold mb-8 text-center uppercase tracking-wide bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-blue">
     Get in Touch
   </h2>
   
@@ -85,7 +85,7 @@ export default function ContactSection() {
     {/* Submit Button with Animation */}
     <button
       type="submit"
-      className="w-full bg-gradient-to-r from-blue-900 to-blue-800 text-white py-3  px-6 rounded-xl hover:from-blue-900 hover:to-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+      className="w-full  bg-blue text-white py-3  px-6 rounded-xl hover:from-blue-900 hover:to-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
     >
       <svg className="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -126,7 +126,7 @@ export default function ContactSection() {
     </div>
 
     <div>
-      <h3 className="text-2xl font-bold text-blue-900 mb-6 text-center uppercase tracking-wide bg-gradient-to-r from-blue-900 to-blue-800 bg-clip-text text-transparent border-b-2 border-blue-100 pb-2">
+      <h3 className="text-2xl font-bold text-blue mb-6 text-center uppercase tracking-wide bg-gradient-to-r from-blue-900 to-blue-800 bg-clip-text text-transparent border-b-2 border-blue-100 pb-2">
         {office.title}
       </h3>
       <div className="space-y-3 text-gray-700">
@@ -180,7 +180,7 @@ export default function ContactSection() {
 
     {/* Action Buttons */}
     <div className="grid grid-cols-2 gap-3 mb-1">
-      <a href={`tel:${office.phone1}`} className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4 py-3 rounded-xl hover:from-blue-900 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
+      <a href={`tel:${office.phone1}`} className="flex items-center justify-center gap-2 bg-blue text-white px-4 py-3 rounded-xl hover:from-blue-900 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
@@ -217,7 +217,7 @@ export default function ContactSection() {
         d="M16.88 3.549L7.12 3.55a2 2 0 00-1.99 2.01L5.13 18.45a2 2 0 002.01 1.99h9.76a2 2 0 001.99-1.99L18.87 5.56a2 2 0 00-1.99-2.01zM12 8v4m0 4h.01"
       />
     </svg>
-    <h3 className="text-2xl uppercase font-semibold text-blue-900">
+    <h3 className="text-2xl uppercase font-semibold text-blue">
       Find Us Here
     </h3>
   </div>
@@ -241,7 +241,7 @@ export default function ContactSection() {
     Visit us at our office in Electronic City, Bengaluru!
   </p>
 
-  <button className="absolute bottom-8  w-5/6 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+  <button className="absolute bottom-8  w-5/6 bg-blue text-white px-4 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
       Get Directions
     </button>
 </div>

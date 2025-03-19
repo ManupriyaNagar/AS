@@ -1,67 +1,45 @@
 // solutionsData.js
 export const solutionsData = [
-    {
-      heading: "IT / ITES Industries Solution",
-      paragraph:
-        "It is widely used on the generation side and transmission side to enhance other grid auxiliary services such as elimination, peak shaving and valley filling, frequency regulation and peak shifting, and delayed capacity expansion.",
-      buttonText: "Centralized Energy Storage Plant",
-      imageUrl: "/solution1.jpeg",
-    },
-    {
-      heading: "Auto Welding Industries Solution",
-      paragraph:
-        "Short paragraph describing the Auto Welding Industries solution. Provide more details about how your product or service addresses this industry’s challenges.",
-      buttonText: "Read More",
-      imageUrl: "/Solution2.jpeg",
-    },
-    {
-      heading: "Textiles Spinning Industries Solution",
-      paragraph:
-        "Short paragraph about the Textiles Spinning Industries solution. Explain benefits, cost savings, or efficiency gains.",
-      buttonText: "Read More",
-      imageUrl: "/solution3.jpeg",
-    },
-    {
-      heading: "Textiles Weaving Industries Solution",
-      paragraph:
-        "Short paragraph about the Textiles Weaving Industries solution. Summarize how your offering applies to weaving processes.",
-      buttonText: "Read More",
-      imageUrl: "/solution4.jpg",
-    },
-    {
-      heading: "FMCG Industries Solution",
-      paragraph:
-        "Short paragraph about how your solution caters to FMCG industry needs—supply chain, packaging, or production lines.",
-      buttonText: "Read More",
-      imageUrl: "/solution5.png",
-    },
-    {
-      heading: "Printing Industries Solution",
-      paragraph:
-        "Short paragraph describing printing industry challenges and how your product or service solves them.",
-      buttonText: "Read More",
-      imageUrl: "/solution6.jgp.jpg",
-    },
-    {
-      heading: "Construction Industries Solution",
-      paragraph:
-        "Short paragraph describing how your solution helps the construction sector with improved safety, scheduling, or resource management.",
-      buttonText: "Read More",
-      imageUrl: "/solution7.jpg",
-    },
-    {
-      heading: "Hospitality Industries Solution",
-      paragraph:
-        "Short paragraph about how your solution addresses hospitality industry needs, such as guest experience or operational efficiency.",
-      buttonText: "Read More",
-      imageUrl: "/solution8.jpg",
-    },
-    {
-      heading: "Pharma / Chemical Industries Solution",
-      paragraph:
-        "Short paragraph explaining how your solution supports pharma or chemical processes, ensuring compliance and quality.",
-      buttonText: "Read More",
-      imageUrl: "/solution9.jpg",
-    },
-  ];
-  
+  {
+    "heading": "Load Study & Harmonic Analysis",
+    "paragraph": "Our Load Study & Harmonic Analysis service ensures optimized energy consumption by identifying power losses, voltage fluctuations, and harmonic distortions. This helps industries enhance efficiency and maintain power quality.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss1.png"
+  },
+  {
+    "heading": "Capacitor Health Checkup",
+    "paragraph": "Regular capacitor health checkups prevent energy wastage and ensure power factor correction. Our solutions help industries maintain stable voltage levels and minimize electricity bills.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss2.png"
+  },
+  {
+    "heading": "Automatic Power Factor Correction Panel (APFC)",
+    "paragraph": "APFC Panels automatically regulate power factor levels, reducing energy consumption and penalties. Ideal for industries with fluctuating loads, ensuring optimal power efficiency.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss3.png"
+  },
+  {
+    "heading": "Real-Time Power Factor Correction Panel (RTPFC)",
+    "paragraph": "RTPFC Panels provide instant power factor corrections for dynamic loads. These panels are highly efficient in maintaining power stability, reducing downtime, and improving electrical system performance.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss4.png"
+  },
+  {
+    "heading": "Active Harmonic Filter Panel (AHF)",
+    "paragraph": "AHF Panels eliminate harmonic distortions in power supply, protecting sensitive equipment and reducing overheating issues. AHF ensures compliance with power quality standards and improves system longevity.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss8.png"
+  },
+  {
+    "heading": "Static VAR Generator Panel (SVG)",
+    "paragraph": "SVG Panels provide rapid and dynamic reactive power compensation, stabilizing voltage levels and improving overall power quality for industrial and commercial applications.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss6.png"
+  },
+  {
+    "heading": "Hybrid Panel (COMBINATION)",
+    "paragraph": "The Hybrid Panel combines multiple power quality solutions, including APFC, RTPFC, and AHF, into a single panel. It ensures seamless energy management and power factor optimization for various industrial needs.",
+    "buttonText": "Learn More",
+    "imageUrl": "/solutionss7.png"
+  }
+]

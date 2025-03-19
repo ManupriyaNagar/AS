@@ -17,50 +17,71 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-8 py-30">
+    <div className="relative min-h-screen flex items-center justify-center py-20 px-6 bg-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/background.jpg" // Change to your background image path
+          src="/background.jpg" // Replace with your background image path
           alt="Background"
           layout="fill"
           objectFit="cover"
-          className="opacity-25"
+          className="opacity-20"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-4xl w-full">
-        {/* Company Info */}
-        <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold text-gray-800">Contact Us</h1>
-          <p className="text-gray-600 mt-2">
-            Get in touch with **Activesine Electricals India Pvt Ltd** for your power quality solutions.
+      <div className="relative z-10  bg-white bg-opacity-95 p-4 rounded-2xl max-w-7xl w-full transform transition-all ">
+        {/* Heading */}
+        <div className="text-center mb-20 ">
+          <h1 className="text-2xl  uppercase md:text-4xl font-extrabold text-gray-900 bg-clip-text  bg-gradient-to-r from-blue-800 to-indigo-600">
+            Contact Us
+          </h1>
+          <p className="md:text-lg text-xs  text-gray-600 mt-3 max-w-7xl mx-auto">
+            Reach out to <strong>Activesine Electricals India Pvt Ltd</strong> for cutting-edge power quality solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-40 gap-20">
           {/* Company Details */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-sm">
-            <h2 className="text-xl font-semibold text-gray-800">Our Office</h2>
-            <p className="text-gray-600 mt-2">Activesine Electricals India Pvt Ltd</p>
-            <p className="text-gray-600">123, Industrial Area, New Delhi, India</p>
-            <p className="text-gray-600 mt-2"><strong>Email:</strong> contact@activesine.com</p>
-            <p className="text-gray-600"><strong>Phone:</strong> +91 98765 43210</p>
-            <p className="text-gray-600 mt-2">Providing power solutions since 2023.</p>
+          <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 tracking-wide">
+              Our Office
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Activesine Electricals India Pvt Ltd</strong><br />
+              Thirupalya Village, Electronic City Phase 1,<br />
+              Bengaluru, Karnataka, India
+            </p>
+            <p className="text-gray-700 mt-4">
+              <strong>Email:</strong>{" "}
+              <a href="mailto:sales@activesine.com" className="text-blue hover:underline">
+                sales@activesine.com
+              </a>
+            </p>
+            <p className="text-gray-700 flex items-center space-x-2">
+  <strong>Phone:</strong>
+  <span>+91 99 0130 34214 , +91 80 6878 5509</span>
+
+</p>
+
+            <p className="text-gray-600 mt-4 italic">
+              Delivering innovative power solutions since 2023.
+            </p>
           </div>
 
           {/* Contact Form */}
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">Send Us a Message</h2>
-            <form onSubmit={handleSubmit} className="mt-4">
+          <div className="p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6 tracking-wide">
+              Send Us a Message
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-5">
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
               />
               <input
@@ -69,21 +90,21 @@ const ContactPage = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
-                rows="4"
+                rows="5"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
-              ></textarea>
+              />
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="w-full bg-blue text-white px-6 py-3 rounded-lg font-semibold uppercase tracking-wide hover:from-blue-700 hover:to-indigo-500 transition-all duration-300 transform hover:scale-105"
               >
                 Send Message
               </button>

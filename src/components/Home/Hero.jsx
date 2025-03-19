@@ -27,7 +27,7 @@ const HeroSection = () => {
       {/* Heading at the Top */}
       <h1 className="text-3xl md:text-5xl font-bold text-black text-center mb-12">
         Safe And Efficient{" "}
-        <span className="text-green-700 underline decoration-medium-green">
+        <span className="text-green decoration-medium-green">
           Energy Storage Solutions
         </span>
       </h1>
@@ -101,7 +101,7 @@ const HeroSection = () => {
   className="shadow-xl rounded-lg overflow-hidden transition-transform duration-150 ease-out"
 >
   <img
-    src="/5.jpg" 
+    src="/3.png" 
     alt="Energy Storage Solution"
     width={600}
     height={400}

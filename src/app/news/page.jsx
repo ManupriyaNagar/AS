@@ -35,22 +35,23 @@ const NewsPage = () => {
   ]);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10">
+    <>
+    <div className="min-h-screen  py-10">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-700 to-blue-800 text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative  text-black py-20">
+        <div className="absolute inset-0 opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+          <h1 className="text-2xl uppercase md:text-4xl font-bold md:mb-6 mb-2 text-center">
             Latest News & Updates
           </h1>
-          <p className="text-xl text-center max-w-3xl mx-auto">
-            Stay informed about the latest developments in sign language education and accessibility
-          </p>
+          <p className="md:text-xl  text-xs text-center md:max-w-3xl w-80 md:w-full mx-auto">
+  Keep up with the latest advancements in sign language education and accessibility solutions.
+</p>
         </div>
       </div>
 
       {/* News Grid */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {news.map((item) => (
             <div
@@ -106,7 +107,11 @@ const NewsPage = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="bg-blue-50 py-16">
+     
+    </div>
+
+
+    <div className="bg-blue-50 py-16 mt-16">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">
@@ -131,7 +136,8 @@ const NewsPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
+
   );
 };
 

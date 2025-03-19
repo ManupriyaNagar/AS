@@ -17,21 +17,21 @@ const WhyChooseUs = () => {
         {/* Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <FaCheckCircle className="text-4xl text-green-500 mb-4" />
+            <FaCheckCircle className="text-4xl text-green mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-blue">Quality Assurance</h3>
             <p className="text-gray-600 text-center">
               Our solutions meet the highest standards of quality and safety.
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <FaBolt className="text-4xl text-yellow-500 mb-4" />
+            <FaBolt className="text-4xl text-green mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-blue">High Performance</h3>
             <p className="text-gray-600 text-center">
               Experience unmatched efficiency and performance in our electrical systems.
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <FaHandsHelping className="text-4xl text-blue-500 mb-4" />
+            <FaHandsHelping className="text-4xl text-green mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-blue">Dedicated Support</h3>
             <p className="text-gray-600 text-center">
               We provide comprehensive support and after-sales service to ensure your success.

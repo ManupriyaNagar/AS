@@ -1,14 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Home, BatteryCharging, Monitor } from "lucide-react"; // Icons
 
 const data = [
   {
     image: "/power-quality.jpg",
     heading: "Home Energy Storage Systems",
-    text: "Dyness home energy storage systems cater to both low and high voltage needs...",
+    text: "ActiveSine home energy storage systems cater to both low and high voltage needs...",
   },
   {
     image: "/3.jpg",
@@ -17,7 +16,7 @@ const data = [
   },
   {
     image: "/power-quality.jpg",
-    heading: "Dyness Smart APP",
+    heading: "ActiveSine Smart APP",
     text: "Monitor and manage your energy storage systems with real-time insights...",
   },
   {
@@ -44,36 +43,34 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[60vh] flex items-center justify-start bg-gray-900 text-white">
+    <section className="relative w-full md:h-[60vh] h-[40vh] flex items-center justify-start bg-gray-900 text-white">
       {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
+      <div className="absolute inset-0 w-full h-full">
+        <img
           src={data[activeIndex].image}
           alt="Feature Image"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-80"
+          className="w-full h-full object-cover opacity-50"
         />
       </div>
 
-      {/* Content (Now Left-Aligned) */}
-      <div className="relative z-10 max-w-2xl py-30 px-10 md:px-16 text-left">
+      {/* Content (Left-Aligned) */}
+      <div className="relative z-10 max-w-6xl py-10 sm:py-20 md:py-30 px-4 sm:px-8 md:px-16 text-justify ml-4 sm:ml-8 md:ml-16">
         <motion.h1
           key={activeIndex}
-          initial={{ opacity: 0, rotate: -90 }}
+          initial={{ opacity: 0, rotate: 0 }}
           animate={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-xl md:text-2xl font-bold"
+          className="text-lg sm:text-xl md:text-2xl font-bold"
         >
           {data[activeIndex].heading}
         </motion.h1>
 
         <motion.p
           key={`text-${activeIndex}`}
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mt-4 text-sm"
+          className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-sm"
         >
           {data[activeIndex].text}
         </motion.p>
@@ -81,15 +78,15 @@ const FeatureSection = () => {
         {/* Read More Button */}
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className="mt-6 px-6 py-3 bg-blue-900 hover:bg-blue-600 text-white rounded-lg transition"
+          className="mt-8 sm:mt-6 px-3 sm:px-6 py-2 sm:py-3 bg-blue-900 hover:bg-blue-600 text-white rounded-lg transition text-sm sm:text-base"
         >
           ➜ Read More
         </motion.button>
       </div>
 
       {/* Bottom Navigation */}
-      <div className="absolute bottom-10 w-full flex justify-center">
-        <div className="flex gap-8 border-b-2 border-white">
+      <div className="absolute bottom-4 sm:bottom-6 md:bottom-10 w-full flex justify-center">
+        <div className="flex gap-4 sm:gap-6 md:gap-8 border-white">
           {[
             { icon: <Home />, text: "Home" },
             { icon: <BatteryCharging />, text: "Energy" },
@@ -98,11 +95,11 @@ const FeatureSection = () => {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className="flex flex-col items-center text-white px-4 pb-2 relative transition-all duration-300 group"
+              className="flex flex-col items-center text-white px-2 sm:px-3 md:px-4 pb-1 sm:pb-2 relative transition-all duration-300 group"
             >
-              {item.icon}
-              <span className="mt-1">{item.text}</span>
-              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-transparent transition-all duration-300 group-hover:bg-white"></div>
+              <div className="text-lg sm:text-xl md:text-2xl">{item.icon}</div>
+              <span className="mt-1 text-xs sm:text-sm md:text-base">{item.text}</span>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] sm:h-[3px] bg-transparent transition-all duration-300 group-hover:bg-white"></div>
             </button>
           ))}
         </div>
