@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const APFC = () => {
+const page = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Main Content Layout */}
@@ -115,4 +115,4 @@ const APFC = () => {
   );
 };
 
-export default APFC; 
+export default page; 

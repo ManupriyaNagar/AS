@@ -15,14 +15,14 @@ const Header = () => {
       href: "/products", 
       label: "PRODUCTS",
       dropdown: [
-        { href: "/products/ahf", label: "AHF/SVG" },
-        { href: "/products/apfc", label: "APFC" },
-        { href: "/products/apf", label: "APF" },
+        { href: "/ahf", label: "AHF/SVG" },
+        { href: "/apfc", label: "APFC" },
+        { href: "/apf", label: "APF" },
       ]
     },
     { href: "/services", label: "SERVICES" },
     { href: "/news", label: "NEWS" },
-    { href: "/contact-us", label: "CONTACT" },
+
   ];
 
   // Debug logging: Print each nav item href to confirm they are defined
