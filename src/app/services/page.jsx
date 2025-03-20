@@ -3,30 +3,30 @@ import Image from 'next/image';
 
 const services = [
   {
-    title: "Training Services",
+    title: "Power Quality Solutions",
     items: [
-      "Sign Language Training",
-      "Interpreter Certification",
-      "Corporate Workshops",
-      "Custom Training Programs",
+      "Power Quality Assessments",
+      "Harmonic Analysis & Mitigation",
+      "Power Factor Correction",
+      "Reactive Power & Energy Efficiency Optimization",
     ],
   },
   {
-    title: "Interpreting Services",
+    title: "Panel Manufacturing & Automation",
     items: [
-      "On-site Interpreting",
-      "Video Remote Interpreting",
-      "Conference Interpreting",
-      "Emergency Services",
+      "APFC/RTPFC Panels",
+      "Active Harmonic Filtering (AHF) & SVG Panels",
+      "ISO 9001:2015 Certified Manufacturing",
+      "IOT-based Monitoring & Smart Panel Systems",
     ],
   },
   {
-    title: "Consulting",
+    title: "Consulting & Custom Solutions",
     items: [
-      "Accessibility Audits",
-      "Policy Development",
-      "Cultural Competency Training",
-      "Strategic Planning",
+      "Customized Power Quality Solutions",
+      "System Integration & Installation",
+      "R&D and Technology Upgradation",
+      "Maintenance & After-Sales Support",
     ],
   },
 ];
@@ -36,12 +36,12 @@ const ServicePage = () => {
     <div className="min-h-screen bg-gray-50 py-10">
       {/* Hero Section */}
       <section className="relative py-24 text-center text-gray-900">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-4xl uppercase font-extrabold mb-4">
+        <div className="container mx-auto px-2">
+          <h1 className="text-4xl font-bold mb-8 text-center uppercase mt-0">
             Our Services
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-80">
-            Comprehensive sign language solutions for businesses and organizations.
+            Comprehensive power quality solutions to enhance efficiency, safety, and innovation.
           </p>
         </div>
       </section>
@@ -72,10 +72,10 @@ const ServicePage = () => {
       {/* CTA Section */}
       <section className="mt-20 max-w-7xl mx-auto bg-gradient-to-r from-blue-800 to-indigo-700 text-white p-12 rounded-lg text-center shadow-lg">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Get Started?
+          Ready to Transform Your Power Quality?
         </h2>
         <p className="text-lg opacity-90 mb-6">
-          Contact us to learn more about our services and how we can help your organization.
+          Contact us to learn how our cutting-edge solutions can optimize your systems and drive efficiency.
         </p>
         <a
           href="/contact-us"

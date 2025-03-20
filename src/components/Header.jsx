@@ -11,7 +11,15 @@ const Header = () => {
   const navItems = [
     { href: "/", label: "HOME" },
     { href: "/solutions", label: "SOLUTIONS" },
-    { href: "/products", label: "PRODUCTS" },
+    { 
+      href: "/products", 
+      label: "PRODUCTS",
+      dropdown: [
+        { href: "/products/ahf", label: "AHF/SVG" },
+        { href: "/products/apfc", label: "APFC" },
+        { href: "/products/apf", label: "APF" },
+      ]
+    },
     { href: "/services", label: "SERVICES" },
     { href: "/news", label: "NEWS" },
     { href: "/contact-us", label: "CONTACT" },
@@ -28,7 +36,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 ease-in-out z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-gray-800">
         {/* Logo Section */}
-        <div className="w-20 h-20">
+        <div className="w-22 h-22">
           <img src="/ActiveSine-logo.png" alt="ActiveSine Logo" />
         </div>
 
@@ -45,17 +53,33 @@ const Header = () => {
                 : pathname.startsWith(item.href);
 
             return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`${
-                  isActive
-                    ? "text-blue-900 font-semibold border-b-2 border-blue-900"
-                    : "text-gray-800 hover:text-gray-600"
-                } transition-colors duration-300 pb-1`}
-              >
-                {item.label}
-              </Link>
+              <div key={item.href} className="relative group">
+                <Link
+                  href={item.href}
+                  className={`${
+                    isActive
+                      ? "text-blue-900 font-semibold border-b-2 border-blue-900"
+                      : "text-gray-800 hover:text-gray-600"
+                  } transition-colors duration-300 pb-1`}
+                >
+                  {item.label}
+                </Link>
+                
+                {/* Dropdown Menu */}
+                {item.dropdown && (
+                  <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    {item.dropdown.map((dropdownItem) => (
+                      <Link
+                        key={dropdownItem.href}
+                        href={dropdownItem.href}
+                        className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-900 transition-colors duration-200"
+                      >
+                        {dropdownItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             );
           })}
         </nav>

@@ -16,7 +16,7 @@ const products = [
   },
   {
     id: 3,
-    name: "APF Panel",
+    name: "APF Module",
     description: "Delivers stable voltage for sensitive equipment.",
     image: "/product52.png",
   },
@@ -35,7 +35,7 @@ const ProductsPage = () => {
       <div className="w-full max-w-7xl">
         {/* Heading Section */}
         <div className="text-center mb-12">
-          <h1 className="text-2xl uppercase md:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent text-blue">
+          <h1 className="text-2xl uppercase md:text-4xl font-bold tracking-tight bg-clip-text text-transparent text-black mt-10">
             Our Products
           </h1>
           <p className="mt-4 text-sm md:text-xl text-gray-600 max-w-2xl mx-auto">
