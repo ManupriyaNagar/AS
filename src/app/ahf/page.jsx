@@ -5,6 +5,9 @@ const AHF = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Main Content Layout */}
+      <h1 className="text-2xl uppercase md:text-4xl font-bold tracking-tight bg-clip-text text-transparent text-black mt-10 text-center">
+            AHF(Active Harmonic Filter)
+          </h1>
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Side - Image */}

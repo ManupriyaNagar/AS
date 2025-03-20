@@ -5,6 +5,9 @@ const page = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Main Content Layout */}
+      <h1 className="text-2xl uppercase md:text-4xl font-bold tracking-tight bg-clip-text text-transparent text-black mt-10 text-center">
+      APFC (Automatic Power Factor Correction)
+          </h1>
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Side - Image */}
@@ -18,6 +21,12 @@ const page = () => {
                   className="object-contain"
                   priority
                 />
+              </div>
+              <div className="mt-6 bg-white rounded-xl shadow-lg p-6">
+                <h1 className="text-3xl font-bold text-blue-900 mb-4">Automatic Power Factor Correction(APFC)</h1>
+                <p className="text-gray-700">
+                  Advanced power quality solution with 3-level topology for superior harmonic mitigation and reactive power compensation
+                </p>
               </div>
             </div>
           </div>

@@ -70,7 +70,7 @@ const ServicePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="mt-20 max-w-7xl mx-auto bg-gradient-to-r from-blue-800 to-indigo-700 text-white p-12 rounded-lg text-center shadow-lg">
+      <section className="mt-20 max-w-7xl mx-auto bg-gradient-to-r from-blue-900 to-blue-900 text-white p-12 rounded-lg text-center shadow-lg">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Ready to Transform Your Power Quality?
         </h2>
@@ -79,7 +79,7 @@ const ServicePage = () => {
         </p>
         <a
           href="/contact-us"
-          className="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300"
+          className="inline-block bg-white text-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300"
           aria-label="Contact Us"
         >
           Contact Us
