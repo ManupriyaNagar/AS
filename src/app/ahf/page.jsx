@@ -13,7 +13,11 @@ const AHF = () => {
           {/* Left Side - Image */}
           <div className="lg:w-1/2">
             <div className="sticky top-24">
+            <div className="absolute top-4 right-4 bg-yellow-400 z-20 text-white text-lg font-bold px-2 py-1 rounded-full flex items-center">
+                  <span className="mr-3">★</span> Iot Based Panel
+                </div>
               <div className="relative h-[600px] w-full rounded-xl overflow-hidden shadow-lg">
+
                 <Image
                   src="/AHF.png"
                   alt="AHF Component"

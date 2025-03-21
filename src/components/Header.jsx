@@ -87,7 +87,7 @@ const Header = () => {
         {/* Right Section with Contact Button */}
         <div className="flex items-center space-x-4">
           <Link href="/contact-us">
-            <button className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 text-white font-semibold hover:opacity-90">
+            <button className="px-4 py-2 rounded-full bg-gradient-to-r bg-blue to-green text-white font-semibold hover:opacity-90">
               Contact
             </button>
           </Link>

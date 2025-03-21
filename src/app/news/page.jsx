@@ -1,39 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+
+// Import images from the public folder or use local imports
+const certificate1 = "/c1.png";
+const certificate2 = "/c2.png";
+const certificate3 = "/c3.jpeg";
+const certificate4 = "/c4.jpeg";
+const award1 = "/award1.jpeg";
+const award2 = "/award2.jpeg";
+const award3 = "/award3.jpeg";
+const award4 = "/award4.jpeg";
+const award5 = "/award5.jpeg";
+const award6 = "/award6.jpeg";
 
 const NewsPage = () => {
-  const [news] = useState([
-    {
-      id: 1,
-      title: "ActiveSign Launches New Advanced Sign Language Course",
-      date: "March 15, 2024",
-      category: "Education",
-      image: "/new2.png",
-      excerpt: "We're excited to announce the launch of our new advanced sign language course, designed for professionals and organizations.",
-      readMore: true
-    },
-    {
-      id: 2,
-      title: "Breaking Barriers: ActiveSign Partners with Major Corporations",
-      date: "March 10, 2024",
-      category: "Partnerships",
-      image: "/new1.jpg",
-      excerpt: "ActiveSign has partnered with leading corporations to provide comprehensive sign language training programs.",
-      readMore: true
-    },
-    {
-      id: 3,
-      title: "New Research Shows Impact of Sign Language in Workplace",
-      date: "March 5, 2024",
-      category: "Research",
-      image: "/new3.png",
-      excerpt: "Recent studies demonstrate the positive impact of sign language training in workplace communication.",
-      readMore: true
-    }
-  ]);
-
   return (
     <>
       <div className="min-h-screen py-10 bg-gray-50">
@@ -45,78 +26,68 @@ const NewsPage = () => {
           </p>
         </div>
 
-        {/* News Grid */}
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {news.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="relative h-56">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-blue-900 text-white px-3 py-1 rounded-full text-sm">
-                    {item.category}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">{item.date}</div>
-                  <h2 className="text-2xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
-                    {item.title}
-                  </h2>
-                  <p className="text-gray-600 mb-4">{item.excerpt}</p>
-                  {item.readMore && (
-                    <Link
-                      href={`/news/${item.id}`}
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium"
-                    >
-                      Read More
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </Link>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Video Banner */}
+        <div className="relative">
+          <video
+            className="w-full object-cover h-[50vh] sm:h-[50vh] md:h-[90vh] radius rounded-tl-3xl rounded-br-3xl"
+            src="/video4.mp4"
+            autoPlay
+            loop
+            muted
+          />
         </div>
-      </div>
 
-      {/* Newsletter Section */}
-      <div className="bg-blue text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-          <p className="text-lg mb-8">
-            Subscribe to our newsletter to receive the latest news and updates about sign language education and accessibility.
-          </p>
-          <form className="flex flex-col md:flex-row gap-4 justify-center">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-6 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-white flex-grow max-w-md"
-            />
-            <button
-              type="submit"
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
+        {/* Certificates Section */}
+        <section className="py-8">
+          <h2 className="text-center text-3xl font-bold mb-6 text-black">Certificates</h2>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 px-4 h-full mb-2">
+            <img src={certificate1} alt="Certificate 1" className="w-full rounded-lg shadow-lg" />
+            <img src={certificate4} alt="Certificate 2" className="w-full rounded-lg shadow-lg " />
+            
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 px-4 h-full">
+            <img src={certificate3} alt="Certificate 1" className="w-full rounded-lg shadow-lg" />
+            <img src={certificate2} alt="Certificate 2" className="w-full rounded-lg shadow-lg " />
+          </div>
+        
+        </section>
+
+        {/* Award Ceremony Section */}
+        <section className="py-8">
+          <h2 className="text-center text-3xl font-bold mb-6 text-black">Award Ceremony</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+            
+            <img src={award2} alt="Award 2" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+            <img src={award4} alt="Award 4" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+            <img src={award3} alt="Award 3" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+            <img src={award1} alt="Award 1" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+           
+            <img src={award5} alt="Award 5" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+            <img src={award6} alt="Award 6" className="w-full h-auto rounded-lg shadow-lg shadow-gray-500/50 transition-transform duration-300 hover:scale-105" />
+          </div>
+        </section>
+
+        {/* Newsletter Section */}
+        <div className="bg-blue text-white py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p className="text-lg mb-8">
+              Subscribe to our newsletter to receive the latest news and updates about sign language education and accessibility.
+            </p>
+            <form className="flex flex-col md:flex-row gap-4 justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-6 py-3 rounded-lg border border-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-white flex-grow max-w-md"
+              />
+              <button
+                type="submit"
+                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </>
