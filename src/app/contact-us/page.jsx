@@ -17,11 +17,11 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center py-20 px-6 bg-white">
+    <div className="relative min-h-screen flex items-center justify-center py-24 px-6 bg-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/background.jpg" // Replace with your background image path
+          src="/background.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"
@@ -33,7 +33,7 @@ const ContactPage = () => {
       <div className="relative z-10  bg-white bg-opacity-95 p-4 rounded-2xl max-w-7xl w-full transform transition-all ">
         {/* Heading */}
         <div className="text-center mb-20 ">
-          <h1 className="text-2xl  uppercase md:text-4xl font-extrabold text-gray-900 bg-clip-text  bg-gradient-to-r from-blue-800 to-indigo-600">
+          <h1 className="text-2xl  uppercase md:text-4xl font-bold text-gray-900 bg-clip-text  bg-gradient-to-r from-blue-800 to-indigo-600">
             Contact Us
           </h1>
           <p className="md:text-lg text-xs  text-gray-600 mt-3 max-w-7xl mx-auto">
@@ -59,10 +59,10 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="text-gray-700 flex items-center space-x-2">
-  <strong>Phone:</strong>
-  <span>+91 99 0130 34214 , +91 80 6878 5509</span>
+              <strong>Phone:</strong>
+              <span>+91 99 0130 34214 , +91 80 6878 5509</span>
 
-</p>
+            </p>
 
             <p className="text-gray-600 mt-4 italic">
               Delivering innovative power solutions since 2023.
@@ -81,7 +81,7 @@ const ContactPage = () => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                className="w-full p-4 text-black bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
               />
               <input
@@ -90,7 +90,7 @@ const ContactPage = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                className="w-full p-4 text-black bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
               />
               <textarea
@@ -99,7 +99,7 @@ const ContactPage = () => {
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                className="w-full p-4 text-black bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                 required
               />
               <button

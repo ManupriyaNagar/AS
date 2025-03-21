@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const products = [
@@ -6,19 +7,22 @@ const products = [
     name: "Hybrid Panel",
     description: "Automatic Power Factor Correction Panels for enhanced efficiency.",
     image: "/1.png",
-    isUSP: true, // Added flag to mark it as the USP product
+    isUSP: true,
+    link:"/ahf" 
   },
   {
     id: 2,
     name: "APFC Panel",
     description: "Minimizes harmonic distortion and boosts power quality.",
     image: "/2.png",
+    link:"/apfc" 
   },
   {
     id: 3,
     name: "APF Module",
     description: "Delivers stable voltage for sensitive equipment.",
     image: "/product52.png",
+    link:"/apf" 
   },
   {
     id: 4,
@@ -26,6 +30,7 @@ const products = [
     description2: "(Static Var Generator)",
     description: "Optimizes power factor and cuts energy losses.",
     image: "/product51.png",
+    link:"/apf" 
   },
 ];
 
@@ -89,6 +94,7 @@ const ProductsPage = () => {
                   {product.description}
                 </p>
               </div>
+              <Link href={product.link}>
               <button
                 className={`mt-6 text-white px-6 py-2 rounded-full font-semibold text-sm uppercase tracking-wide transition-all duration-300 transform hover:scale-105 ${
                   product.isUSP
@@ -98,6 +104,7 @@ const ProductsPage = () => {
               >
                 Know More
               </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -27,9 +27,9 @@ export default function Footer() {
       )}
 
       {/* Top section: Social networks */}
-      <div className="relative border-b border-gray-200 py-4 flex flex-col md:flex-row justify-between items-center lg:px-16 z-10 text-center">
-        <div className="mb-2 md:mb-0">
-          Get connected with us on social networks:
+      <div className="relative border-b border-gray-200 py-4 flex flex-col md:flex-row justify-end items-center lg:px-16 z-10 text-center">
+        <div className="mb-2 md:mb-0 mr-1">
+          Get connected with us on social networks :
         </div>
         <div className="flex space-x-4">
           <Link href="https://www.facebook.com/profile.php?id=61573076558484" aria-label="Facebook">
@@ -93,21 +93,35 @@ export default function Footer() {
           <div className="text-center lg:text-left text-white">
             <h6 className="uppercase font-semibold mb-4">Contact</h6>
             <div className="flex flex-col items-center lg:items-start">
-              <div className='flex items-center mb-4'>
-                <FiMapPin className="mr-2" size={18} />
-                <p>
-                  Thirupalya Village, Electronic City <br /> Phase 1, Bengaluru
-                </p>
+              {/* Location with Map */}
+              <div className="flex flex-col w-full mb-4">
+                <div className="flex items-start">
+                  <FiMapPin className="mr-2 mt-1" size={18} />
+                  <a
+                    href="https://www.google.com/maps/place/Electronic+City+Phase+I,+Bengaluru,+Karnataka/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Thirupalya Village, Electronic City <br /> Phase 1, Bengaluru
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center mb-4">
-                <FiMail className="mr-2" size={18} />
+
+
+              {/* Email */}
+              <div className="flex items-start mb-4">
+                <FiMail className="mr-2 mt-1" size={18} />
                 <p>sales@activesine.com</p>
               </div>
-              <div className="flex items-center mb-4">
-                <FiPhone className="mr-2" size={18} />
-                <p>+91 99 01303 4214, +91 80 6878 5509</p>
+
+              {/* Phone Number */}
+              <div className="flex items-start">
+                <FiPhone className="mr-2 mt-1" size={18} />
+                <p className="whitespace-nowrap">+91 99 01303 4214, +91 80 6878 5509</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>

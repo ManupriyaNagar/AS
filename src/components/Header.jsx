@@ -34,9 +34,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 ease-in-out z-50">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-gray-800">
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-gray-800 py-2">
         {/* Logo Section */}
-        <div className="w-22 h-22">
+        <div className="h-full w-24">
           <img src="/ActiveSine-logo.png" alt="ActiveSine Logo" />
         </div>
 
