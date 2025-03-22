@@ -15,7 +15,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className=" bg-gradient-to-br from-blue-50 to-blue-100 py-10 px-5 md:px-32 ">
+    <div className=" bg-gradient-to-br from-blue-50 to-blue-100 py-10 px-5 md:px-2 ">
       {/* Single Grid for All Three Sections */}
 
       <h1 className="text-4xl font-bold text-center mb-10 text-black">Contact Us</h1>
@@ -200,7 +200,7 @@ export default function ContactSection() {
   </div>
 ))}
         {/* Map Section */}
-        <div className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
+        <div className="bg-white shadow-xl rounded-lg py-8 px-8 flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
   {/* Header Section */}
   <div className="flex items-center space-x-2 mb-4">
     <svg
