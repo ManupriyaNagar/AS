@@ -7,6 +7,7 @@ const certificate1 = "/c1.png";
 const certificate2 = "/c2.png";
 const certificate3 = "/c3.jpeg";
 const certificate4 = "/c4.jpeg";
+const certificate5= "/image.png";
 const award1 = "/award1.jpeg";
 const award2 = "/award2.jpeg";
 const award3 = "/award3.jpeg";
@@ -40,14 +41,14 @@ const NewsPage = () => {
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto p-12 bg-white rounded-xl">
           <h2 className="text-center text-3xl font-bold mb-10 text-black">Rewards & Recognitions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* First Certificate with Button */}
             <div className="relative flex flex-col items-center p-4 border border-gray-300 rounded-lg bg-white">
               <img 
                 src={certificate1} 
                 alt="Certificate 1" 
-                className="w-full max-h-[95vh] rounded-lg object-contain"
+                className="w-full max-h-[160vh] rounded-lg object-contain h-auto transition-transform duration-300 hover:scale-105"
               />
               <a
                 href="https://www.theindustryoutlook.com/manufacturing/vendor/activesine-electricals-a-rapidly-emerging-pure-power-supply-solutions-provider-cid-11824.html"
@@ -65,8 +66,25 @@ const NewsPage = () => {
               <img 
                 src={certificate4} 
                 alt="Certificate 2" 
-                className="w-full max-h-[95vh] rounded-lg object-contain"
+                className="w-full max-h-[140vh] rounded-lg object-contain"
               />
+            </div>
+
+            <div className="relative flex flex-col items-center py-4 border border-gray-300 rounded-lg bg-white">
+              <img 
+                src={certificate5} 
+                alt="Certificate 1" 
+                className="w-full max-h-[60vh] rounded-lg object-contain"
+              />
+              <a
+                href="https://www.linkedin.com/posts/industryoutlook_theindustryoutlook-electricalinfrastructure-activity-7336651375088435200-JO5C/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAzD4k0BQNlZoKr9b1IhearvZwLdjCUdtoU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-6 py-3 bg-blue text-white font-medium rounded-lg 
+                           hover:bg-green-700 transition-transform duration-300 transform hover:scale-105"
+              >
+                View News
+              </a>
             </div>
 
           </div>
