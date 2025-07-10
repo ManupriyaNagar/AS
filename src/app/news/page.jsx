@@ -1,13 +1,16 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { Heart, MessageCircle } from 'lucide-react';
+import InstagramMarquee from '@/components/solution/InstagramMarquee';
 
 // Import images from the public folder or use local imports
 const certificate1 = "/c1.png";
 const certificate2 = "/c2.png";
 const certificate3 = "/c3.jpeg";
 const certificate4 = "/c4.jpeg";
-const certificate5= "/image.png";
+const certificate5 = "/image.png";
 const award1 = "/award1.jpeg";
 const award2 = "/award2.jpeg";
 const award3 = "/award3.jpeg";
@@ -42,7 +45,6 @@ const NewsPage = () => {
         <div className="container mx-auto p-12 bg-white rounded-xl">
           <h2 className="text-center text-3xl font-bold mb-10 text-black">Rewards & Recognitions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
             {/* First Certificate with Button */}
             <div className="relative flex flex-col items-center p-4 border border-gray-300 rounded-lg bg-white">
               <img 
@@ -55,7 +57,7 @@ const NewsPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 px-6 py-3 bg-blue text-white font-medium rounded-lg 
-                           hover:bg-green-700 transition-transform duration-300 transform hover:scale-105"
+                          hover:bg-green-700 transition-transform duration-300 transform hover:scale-105"
               >
                 View News
               </a>
@@ -70,10 +72,11 @@ const NewsPage = () => {
               />
             </div>
 
+            {/* Third Certificate with Button */}
             <div className="relative flex flex-col items-center py-4 border border-gray-300 rounded-lg bg-white">
               <img 
                 src={certificate5} 
-                alt="Certificate 1" 
+                alt="Certificate 3" 
                 className="w-full max-h-[60vh] rounded-lg object-contain"
               />
               <a
@@ -81,12 +84,11 @@ const NewsPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 px-6 py-3 bg-blue text-white font-medium rounded-lg 
-                           hover:bg-green-700 transition-transform duration-300 transform hover:scale-105"
+                          hover:bg-green-700 transition-transform duration-300 transform hover:scale-105"
               >
                 View News
               </a>
             </div>
-
           </div>
         </div>
       </section>
@@ -99,20 +101,23 @@ const NewsPage = () => {
             <div className="relative p-4 border-2 border-gray-300 rounded-lg bg-white">
               <img 
                 src={certificate3} 
-                alt="Certificate 1" 
+                alt="Certificate 4" 
                 className="w-full h-auto max-h-[80vh] rounded-lg object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
             <div className="relative p-4 border-2 border-gray-300 rounded-lg bg-white">
               <img 
                 src={certificate2} 
-                alt="Certificate 2" 
+                alt="Certificate 5" 
                 className="w-full h-auto max-h-[80vh] rounded-lg object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
         </div>
       </section>
+
+      {/* Latest Instagram Posts */}
+  <InstagramMarquee/>
 
       {/* Award Ceremony Section */}
       <section className="py-8">
@@ -134,10 +139,8 @@ const NewsPage = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
           <p className="text-lg mb-8">
-          Stay ahead of the curve by subscribing to our newsletter, and be the first to know about our<br /> new products, technologies,  and  
-          innovations
-          in the power quality industry.
-          
+            Stay ahead of the curve by subscribing to our newsletter, and be the first to know about our<br /> 
+            new products, technologies, and innovations in the power quality industry.
           </p>
           <form className="flex flex-col md:flex-row gap-4 justify-center">
             <input
