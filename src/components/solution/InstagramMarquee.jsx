@@ -5,6 +5,11 @@ import Link from 'next/link';
 
 const posts = Array(4).fill([
   {
+    src: "/image-copy.png",
+    text: "Smarter Power Starts Here ⚡ | ActiveSine AHF/SVG + APFC/RTPFC Panels",
+    likes: "2 likes",
+  },
+  {
     src: "/insta1.png",
     text: "Harmonic Filters: Essential Tools for Power Quality Enhancement in Indian Industries ✨",
     likes: "21 likes",
@@ -39,6 +44,7 @@ const posts = Array(4).fill([
     text: "This little guy found the perfect sunny spot ☀️🐱",
     likes: "2,156 likes",
   },
+ 
   
 ]).flat().slice(0, 12);
 
