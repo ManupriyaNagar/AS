@@ -38,7 +38,7 @@ export default function Footer() {
           <Link href="https://www.instagram.com/activesine_/" aria-label="Instagram">
             <FaInstagram className="text-xl hover:text-gray-300 transition-colors" />
           </Link>
-          <Link href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all" aria-label="LinkedIn">
+          <Link href="https://www.linkedin.com/company/activesineelectricals/posts/?feedView=all" aria-label="LinkedIn">
             <FaLinkedinIn className="text-xl hover:text-gray-300 transition-colors" />
           </Link>
         </div>
