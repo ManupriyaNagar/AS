@@ -3,50 +3,40 @@
 import { Heart, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
-const posts = Array(4).fill([
+const posts = [
   {
     src: "/image-copy.png",
-    text: "Smarter Power Starts Here ⚡ | ActiveSine AHF/SVG + APFC/RTPFC Panels",
     likes: "2 likes",
   },
   {
     src: "/insta1.png",
-    text: "Harmonic Filters: Essential Tools for Power Quality Enhancement in Indian Industries ✨",
     likes: "21 likes",
   },
   {
     src: "/insta2.png",
-    text: "Transform your energy game with ActiveSine! Maximize your power efficiency and reduce operational losses with our cutting-edge Active Harmonic Filter. Achieve an optimized system with boosted power factor and up to 20% energy savings—because your business deserves smart energy management that works",
     likes: "892 likes",
   },
   {
     src: "/insta3.png",
-    text: "This little guy found the perfect sunny spot ☀️🐱",
     likes: "2,156 likes",
   },
-    {
+  {
     src: "/insta4.png",
-    text: "TIs your power system silently losing efficiency?Invisible electrical harmonics might be the culprit—and they cost more than you think.",
     likes: "2,156 likes",
   },
-     {
+  {
     src: "/image5.png",
-    text: "This little guy found the perfect sunny spot ☀️🐱",
     likes: "2,156 likes",
   },
-     {
+  {
     src: "/insta6.png",
-    text: "This little guy found the perfect sunny spot ☀️🐱",
     likes: "2,156 likes",
   },
-     {
+  {
     src: "/insta7.png",
-    text: "This little guy found the perfect sunny spot ☀️🐱",
     likes: "2,156 likes",
   },
- 
-  
-]).flat().slice(0, 12);
+];
 
 const InstagramMarquee = () => {
   return (
@@ -68,11 +58,17 @@ const InstagramMarquee = () => {
       >
         <div className="flex whitespace-nowrap marquee-track gap-x-6">
           {[...posts, ...posts].map((post, index) => (
-            <Link href="https://www.instagram.com/activesine_/" key={index} className="group block min-w-[300px]" target='blank'>
+            <Link
+              href="https://www.instagram.com/activesine_/"
+              key={index}
+              className="group block min-w-[300px]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-[300px] h-[400px]">
                 <img
                   src={post.src}
-                  alt="Instagram post"
+                  alt={post.text}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -82,15 +78,24 @@ const InstagramMarquee = () => {
                       <Heart className="w-5 h-5" />
                       <MessageCircle className="w-5 h-5" />
                     </div>
-                    {/* <span className="text-sm">{post.likes}</span> */}
+                    <span className="text-sm">{post.likes}</span>
                   </div>
-                  {/* <p className="text-sm font-medium object-cover">{post.text}</p> */}
                 </div>
               </div>
             </Link>
           ))}
         </div>
       </div>
+      {/* Custom marquee animation styles */}
+      <style jsx global>{`
+        .marquee-track {
+          animation: marquee 40s linear infinite;
+        }
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </div>
   );
 };

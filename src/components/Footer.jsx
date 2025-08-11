@@ -3,26 +3,26 @@
 import Link from 'next/link';
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { FiMapPin, FiMail, FiPhone } from 'react-icons/fi'; // Importing icons
+import { FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
 
 export default function Footer() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Ensures this runs only on the client side
+    setIsClient(true);
   }, []);
 
   return (
     <footer className="relative bg-gray-950 text-gray-200">
-      {/* Background GIF (Only rendered on client to avoid SSR mismatch) */}
+      {/* Background GIF */}
       {isClient && (
         <div className="absolute inset-0">
           <img
-            src="/buttom-gif.gif" // Replace with actual GIF path
+            src="/buttom-gif.gif"
             alt="Background Animation"
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-blue-900 opacity-30"></div> {/* Faded blue overlay */}
+          <div className="absolute inset-0 bg-blue-900 opacity-30"></div>
         </div>
       )}
 
@@ -69,7 +69,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Useful Links */}
+          {/* Services */}
           <div className="text-center lg:text-left ">
             <h6 className="uppercase font-semibold mb-4">Services</h6>
             <p className="mb-4">
@@ -79,7 +79,7 @@ export default function Footer() {
             </p>
             <p className="mb-4">
               <Link href="#" className="text-gray-300 hover:text-gray-100 transition-colors">
-                Interprerting Services
+                Interpreting Services
               </Link>
             </p>
             <p className="mb-4">
@@ -107,26 +107,36 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-
-
               {/* Email */}
               <div className="flex items-start mb-4">
                 <FiMail className="mr-2 mt-1" size={18} />
-                <p>sales@activesine.com</p>
+                <a href="mailto:sales@activesine.com" className="hover:underline">
+                  sales@activesine.com
+                </a>
               </div>
-
-              {/* Phone Number */}
+              {/* Phone */}
               <div className="flex items-start">
                 <FiPhone className="mr-2 mt-1" size={18} />
-                <p className="whitespace-nowrap">+91 99 01303 4214, +91 80 6878 5509</p>
+                <a
+                  href="tel:+9199013034214"
+                  className="whitespace-nowrap hover:underline"
+                >
+                  +91 99 01303 4214
+                </a>
+                <span className="mx-1">,</span>
+                <a
+                  href="tel:+918068785509"
+                  className="whitespace-nowrap hover:underline"
+                >
+                  +91 80 6878 5509
+                </a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-      {/* Copyright */}
+      {/* Bottom copyright section */}
       <div className="relative bg-gray-950 text-center py-4 z-10 flex flex-col md:flex-row justify-between items-center px-6 text-xs md:text-sm">
         <p className="text-gray-300 mb-2 md:mb-0">
           Powered by{" "}

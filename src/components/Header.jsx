@@ -22,6 +22,7 @@ const Header = () => {
     },
     { href: "/services", label: "SERVICES" },
     { href: "/news", label: "NEWS" },
+     { href: "/ASB.pdf", label: "BROCHURE" },
   ];
 
   const toggleMobileMenu = () => {
